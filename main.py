@@ -731,7 +731,7 @@ def main_window():
                         else:
                             messagebox.showwarning("Warning!", "Fill up Everything", parent=top)
 
-                    # Define image as background in Add Employee window
+                    #Define image as background in Add Employee window
                     bg = ImageTk.PhotoImage(file="images/add_emp.png")
                     bg_label = Label(top, image=bg)
                     bg_label.place(x=0, y=0)
