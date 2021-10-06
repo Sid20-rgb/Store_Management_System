@@ -33,6 +33,7 @@ def main_window():
         global index
 
         if entry1.get() == 'Admin' and entry2.get() == '123':
+            messagebox.showinfo('Correct', 'Login Successful')
             root1 = Toplevel()
 
             root1.geometry('1191x671+145+50')
@@ -153,7 +154,8 @@ def main_window():
                                 i.delete(0, END)
 
                         def upd_product():
-                            if en1.get() != '' and en2.get() != '' and en3.get() != '' and en4.get() != '' and en5.get() != '' and en6.get() != '' and en7.get() != '':
+                            if en1.get() != '' and en2.get() != '' and en3.get() != '' and en4.get() != '' and en5.get() != '' and en6.get() != '' and \
+                                    en7.get() != '':
 
                                 conn = sqlite3.connect('database.db')
 
@@ -288,7 +290,8 @@ def main_window():
                             i.delete(0, END)
 
                     def add_product():
-                        if en1a.get() != '' and en2a.get() != '' and en3a.get() != '' and en4a.get() != '' and en5a.get() != '' and en6a.get() != '' and en7a.get() != '':
+                        if en1a.get() != '' and en2a.get() != '' and en3a.get() != '' and en4a.get() != '' and en5a.get() != '' and en6a.get() != '' and\
+                                en7a.get() != '':
 
                             conn = sqlite3.connect('database.db')
 
@@ -1562,7 +1565,8 @@ def main_window():
                         quantity_list_string = f'"{quantity_list}"'
 
                         # Displaying messagebox if below conditions occur
-                        if customerName.get() == '' or contactNum.get() == '' or category.get() == '' or subCategory.get() == '' or product.get() == '' or quantityEntry.get() == '':
+                        if customerName.get() == '' or contactNum.get() == '' or category.get() == '' or subCategory.get() == '' or product.get() == '' or \
+                            quantityEntry.get() == '':
                             messagebox.showerror("Incomplete Information!!", "Please fill up all the details!", parent=window)
 
                         else:
