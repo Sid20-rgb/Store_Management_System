@@ -26,8 +26,3 @@ It has login facilities for enabling authorized access to the system. It stores 
 ## Scope
 The modification of the system may as well be used in other sectors of management too. As the system helps to arrange products and data in a systematic way, it can be used in any business.
 
-> ***Group: The Slytherin Snakes*** <br>
-Nischal Bista - **210241** <br>
-Siddhartha Ratna Shakya - **210200** <br>
-Binod Subedi - **210227** <br>
-Aditi Chalisay - **210202** 
